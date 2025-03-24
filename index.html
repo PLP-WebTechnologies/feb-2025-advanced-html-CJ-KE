@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web development week 2</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table,th,td {
+            border: 1px solid black;
+        }
+        form {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            margin: 8px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <ol type="i">
+        <li>ITEM 1</li>
+        <li>ITEM 2</li>
+        <li>ITEM 3</li>
+        <li>ITEM 4</li>
+        <li>ITEM 5</li>
+    </ol>
+
+    <img src="https://www.pexels.com/photo/camel-walking-on-sandy-dunes-in-dubai-desert-30795098/" alt="camel walking on dunes">
+
+
+    <table> 
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>james</td>
+            <td>Nairobi,kenya</td>
+            <td>+254748923238</td>
+            <td>james001@gmail.com</td>
+        </tr>
+        <tr>
+            <td>chege</td>
+            <td>Nairobi,kenya</td>
+            <td>+254748923238</td>
+            <td>chege001@gmail.com</td>
+        </tr>
+        <tr>
+            <td>wanjiku</td>
+            <td>Nairobi,kenya</td>
+            <td>+254748923238</td>
+            <td>wanjiku001@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Elsie</td>
+            <td>Nairobi,kenya</td>
+            <td>+25345673238</td>
+            <td>Elsie001@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Diane</td>
+            <td>Nairobi,kenya</td>
+            <td>+2570000008</td>
+            <td>Diane001@gmail.com</td>
+        </tr>
+
+
+
+
+
+
+
+
+    </table>
+       
+<!--log in form-->
+   
+    <h2>Registration Form</h2>
+
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown Selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">Kenya</option>
+            <option value="Canada">Ethiopia</option>
+            <option value="UK">South africa</option>
+            <option value="India">Rwanda</option>
+            <option value="Australia">Tanzania</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
